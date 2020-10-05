@@ -5,8 +5,8 @@
 
   # MovieInfo App
 
-  ## Description
-  JavaScript/jQuery app that fetches movie data from the OMDb API
+ 
+> JavaScript/jQuery app that fetches movie data from the OMDb API
 
   ## Screenshots
   <img src="https://raw.githubusercontent.com/PtPrashantTripathi/movieinfo/PtPrashantTripathi-patch/assets/screenshot.gif" alt="MovieInfo App"/>
@@ -19,7 +19,17 @@
   ```bash
   Run index.html on any server
   ```
+  ## Contributor
+  <table>
 
+  <tr>
+
+    <td align="center"><a href="https://github.com/ptprashanttripathi"><img src="https://avatars2.githubusercontent.com/u/26687933?s=200&v=4" width="100px;" alt=""/><br /><sub><b>Pt. Prashant Tripathi</b></sub></a><br /><a href="https://github.com/rahuldkjain/github-profile-readme-generator/https://github.com/bradtraversy/movieinfocommits?author=ptprashanttripathi" title="Code">💻</a></td>
+
+
+  </tr>
+
+</table>
 
   ## Questions and Feedback
   Please contact me using one of the following:
