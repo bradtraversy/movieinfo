@@ -20,11 +20,9 @@
   Run index.html on any server
   ```
   ## Contributor
-  <table>
+  
 
-  <tr>
-
-    <td align="center"><a href="https://github.com/ptprashanttripathi"><img src="https://avatars2.githubusercontent.com/u/26687933?s=200&v=4" width="100px;" alt=""/><br /><sub><b>Pt. Prashant Tripathi</b></sub></a><br /><a href="https://github.com/bradtraversy/movieinfocommits?author=ptprashanttripathi" title="Code">💻</a></td>
+  <table><tr><td align="center"><a href="https://github.com/ptprashanttripathi"><img src="https://avatars2.githubusercontent.com/u/26687933?s=200&v=4" width="100px;" alt=""/><br /><sub><b>Pt. Prashant Tripathi</b></sub></a><br /><a href="https://github.com/bradtraversy/movieinfocommits?author=ptprashanttripathi" title="Code">💻</a></td></tr></table>
 
 
   </tr>
