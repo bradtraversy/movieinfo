@@ -10,7 +10,7 @@
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/PtPrashantTripathi/movieinfo.svg)
 ![GitHub commits since latest release](https://img.shields.io/github/commits-since/PtPrashantTripathi/movieinfo/v1.0.svg)
-![GitHub commit activity](https://img.shields.io/github/commit-activity/PtPrashantTripathi/movieinfo.svg)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/w/PtPrashantTripathi/movieinfo.svg)
 ![Website Status](https://img.shields.io/website/http/ptprashanttripathi.github.io.svg?down_message=Down&up_message=Online)
 ![Repo-Size](https://img.shields.io/github/repo-size/PtPrashantTripathi/movieinfo.svg)
 ![Code-Size](https://img.shields.io/github/languages/code-size/PtPrashantTripathi/movieinfo.svg)
