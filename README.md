@@ -1,38 +1,68 @@
-  [![contributors-shield](https://img.shields.io/github/contributors/bradtraversy/movieinfo.svg?style=flat-square)](https://github.com/bradtraversy/movieinfo/graphs/contributors)
-  [![forks-shield](https://img.shields.io/github/forks/bradtraversy/movieinfo.svg?style=flat-square)](https://github.com/bradtraversy/movieinfo/network/members)
-  [![stars-shield](https://img.shields.io/github/stars/bradtraversy/movieinfo.svg?style=flat-square)](https://github.com/bradtraversy/movieinfo/stargazers)
-  [![issues-shield](https://img.shields.io/github/issues/bradtraversy/movieinfo.svg?style=flat-square)](https://github.com/bradtraversy/movieinfo/issues)
+[![contributors-shield](https://img.shields.io/github/contributors/ptprashanttripathi/movieinfo.svg?style=flat-square)](https://github.com/ptprashanttripathi/movieinfo/graphs/contributors)
+[![forks-shield](https://img.shields.io/github/forks/ptprashanttripathi/movieinfo.svg?style=flat-square)](https://github.com/ptprashanttripathi/movieinfo/network/members)
+[![stars-shield](https://img.shields.io/github/stars/ptprashanttripathi/movieinfo.svg?style=flat-square)](https://github.com/ptprashanttripathi/movieinfo/stargazers)
+[![issues-shield](https://img.shields.io/github/issues/ptprashanttripathi/movieinfo.svg?style=flat-square)](https://github.com/ptprashanttripathi/movieinfo/issues)
+![Devloper](https://img.shields.io/badge/Devloper-Pt.%20Prashant%20Tripathi-Success.svg)
+![GitHub release](https://img.shields.io/github/release/PtPrashantTripathi/movieinfo.svg)
+![GitHub Release Date](https://img.shields.io/github/release-date/PtPrashantTripathi/movieinfo.svg)
+![License](https://img.shields.io/github/license/PtPrashantTripathi/movieinfo.svg)
+![Total-Downlode](https://img.shields.io/github/downloads/PtPrashantTripathi/movieinfo/total.svg)
+![GitHub contributors](https://img.shields.io/github/contributors/PtPrashantTripathi/movieinfo.svg?color=0&logo=git&logoColor=orange)
+![GitHub last commit](https://img.shields.io/github/last-commit/PtPrashantTripathi/movieinfo.svg)
+![GitHub commits since latest release](https://img.shields.io/github/commits-since/PtPrashantTripathi/movieinfo/v1.0.svg)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/w/PtPrashantTripathi/movieinfo.svg)
+![Website Status](https://img.shields.io/website/http/Prashanttripathi.ga.svg?down_message=Down&up_message=Online)
+![Repo-Size](https://img.shields.io/github/repo-size/PtPrashantTripathi/movieinfo.svg)
+![Code-Size](https://img.shields.io/github/languages/code-size/PtPrashantTripathi/movieinfo.svg)
+![Top-languages](https://img.shields.io/github/languages/top/PtPrashantTripathi/movieinfo.svg?color=Blue&logo=java)
+![GitHub followers](https://img.shields.io/github/followers/PtPrashantTripathi.svg?label=%20%40PtPrashantTripathi&logo=github)
+![Twitter](https://img.shields.io/twitter/follow/PtPrashant09.svg?label=%20%40PtPrashant09&logo=twitter)
 
-  # MovieInfo App
+# MovieInfo App
 
- 
 > JavaScript/jQuery app that fetches movie data from the OMDb API
 
-  ## Screenshots
-  <img src="https://raw.githubusercontent.com/PtPrashantTripathi/movieinfo/PtPrashantTripathi-patch/assets/screenshot.gif" alt="MovieInfo App"/>
+## Screenshots
 
-  ## Installation
-  Download (and unpack) or clone the repo, then wallah! you did it
+![screenshot](https://raw.githubusercontent.com/PtPrashantTripathi/movieinfo/master/assets/screenshot.gif)
 
-  ## Usage
-  
-  ```bash
-  Run index.html on any server
-  ```
-  ## Contributor
-  
+## Installation
+Download (and unpack) or clone the repo, then wallah! you did it
 
-  <table><tr><td align="center"><a href="https://github.com/ptprashanttripathi"><img src="https://avatars2.githubusercontent.com/u/26687933?s=200&v=4" width="100px;" alt=""/><br /><sub><b>Pt. Prashant Tripathi</b></sub></a><br /><a href="https://github.com/bradtraversy/movieinfocommits?author=ptprashanttripathi" title="Code">💻</a></td></tr></table>
+## Usage
 
+```bash
+Run index.html on any server
+```
 
-  </tr>
+## Contributor
+<table>
+  <tr>
+		<td align="center">
+				<a href="https://github.com/ptprashanttripathi">
+					<sub><b>Pt. Prashant Tripathi</b></sub>
+				</a>
+		</td>
+	</tr>
+  <tr>
+		<td align="center">
+			<a href="https://github.com/ptprashanttripathi">
+				<img src="https://avatars2.githubusercontent.com/u/26687933?s=200&v=4" width="100px;" alt=""/>
+			</a>
+		</td>
+	</tr>
+	<tr>
+		<td align="center">
+			<a href="https://github.com/ptprashanttripathi/movieinfocommits?author=ptprashanttripathi" title="Code">💻</a>
+		</td>
+	</tr>
+</table>  
 
-</table>
+## Questions and Feedback
 
-  ## Questions and Feedback
-  Please contact me using one of the following:
+**Please contact me using one of the following:**
 
-Github: [bradtraversy](https://gist.github.com/bradtraversy)
+Github: [movieinfo](https://gist.github.com/ptprashanttripathi/movieinfo)
 
-  Email: [traversymedia@gmail.com](mailto:traversymedia@gmail.com)
+Email: [traversymedia@gmail.com](mailto:traversymedia@gmail.com)
   
