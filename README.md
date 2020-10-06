@@ -7,7 +7,6 @@
 ![GitHub Release Date](https://img.shields.io/github/release-date/PtPrashantTripathi/movieinfo.svg)
 ![License](https://img.shields.io/github/license/PtPrashantTripathi/movieinfo.svg)
 ![Total-Downlode](https://img.shields.io/github/downloads/PtPrashantTripathi/movieinfo/total.svg)
-
 ![GitHub last commit](https://img.shields.io/github/last-commit/PtPrashantTripathi/movieinfo.svg)
 ![GitHub commits since latest release](https://img.shields.io/github/commits-since/PtPrashantTripathi/movieinfo/v1.0.svg)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/PtPrashantTripathi/movieinfo.svg)
@@ -53,7 +52,7 @@ Run index.html on any server
 	</tr>
 	<tr>
 		<td align="center">
-			<a href="https://github.com/ptprashanttripathi/movieinfocommits?author=ptprashanttripathi" title="Code">💻</a>
+			<a href="https://github.com/ptprashanttripathi/movieinfocommits?author=ptprashanttripathi" title="Code">ðŸ’»</a>
 		</td>
 	</tr>
 </table>  
