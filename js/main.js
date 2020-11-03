@@ -93,11 +93,11 @@ function loadMovies(){
 
   movies.forEach(function(movie){
       output += `
-      <div class="movieClass">
+      <div class="container">
         <div>
           <img class="object-fit-cover" src="${movie.Poster}">
-          <h4 class="movieTitle" >${movie.Title}</h4>
-          <a class="viewDetails" onclick="movieSelected('${movie.imdbID}')" target="_blank" >Movie Details</a>
+          <h2 class="movie-title" >${movie.Title}</h2>
+          <a class="view-details" onclick="movieSelected('${movie.imdbID}')" target="_blank" >Movie Details</a>
         </div>
       </div>
     `;
