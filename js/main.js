@@ -1,16 +1,22 @@
-$(document).ready(() => {
+window.addEventListener('load', function onReady(){
+    
   loadMovies();
-  $('#searchForm').on('submit', (e) => {
-    let searchText = $('#searchText').val();
-    getMovies(searchText);
-    e.preventDefault();
+
+  document.getElementById('search-form').addEventListener('submit', function onSearchSubmit(){
+    // Step 1: Get the form value
+
+    /**
+     * Step 2: Invoke the API - http://www.omdbapi.com/?apikey=<api-key> and retrieve the post list
+     *         After the response returned - update the details into the div ( with "movies" id ) 
+     * */ 
   });
+
 });
 
 
 function loadMovies(){
 
-  const movies = [
+  var movies = [
     {
       "Title": "Inside Out",
       "Year": "2015",
@@ -81,11 +87,12 @@ function loadMovies(){
       "Type": "series",
       "Poster": "https://m.media-amazon.com/images/M/MV5BYTY1Y2UzMmItZDgzMC00Nzc1LTk3ZDAtYWM4MGFhNzdkYzU1XkEyXkFqcGdeQXVyMjQ1NjEyNzE@._V1_SX300.jpg"
     }
-  ]
+  ];
   
-  let output = '';
-  $.each(movies, (index, movie) => {
-    output += `
+  var output = '';
+
+  movies.forEach(function(movie){
+      output += `
       <div class="movieClass">
         <div>
           <img class="object-fit-cover" src="${movie.Poster}">
@@ -94,83 +101,13 @@ function loadMovies(){
         </div>
       </div>
     `;
-  });
-  $('#movies').html(output);
-}
-
-function getMovies(){
-  // axios.get('http://www.omdbapi.com/?apikey=e54db17c&s='+searchText)
-  //   .then((response) => {
-  //     console.log(response);
-  //     let movies = response.data.Search;
-  //     let output = '';
-      
-  //   })
-  //   .catch((err) => {
-  //     console.log(err);
-  //   });
-//   let output = '';
-//   $.each(movies, (index, movie) => {
-//     output += `
-//       <div class="col-md-3">
-//         <div class="well text-center">
-//           <img src="${movie.Poster}">
-//           <h5>${movie.Title}</h5>
-//           <a onclick="movieSelected('${movie.imdbID}')" class="btn btn-primary" href="#">Movie Details</a>
-//         </div>
-//       </div>
-//     `;
-//   });
-//  console.log(output);
-//   $('#movies').html(output);
+  })
+  
+  document.getElementById('movies').innerHTML = output;
 }
 
 function movieSelected(id){
   sessionStorage.setItem('movieId', id);
   window.location = 'movie.html';
   return false;
-}
-
-function getMovie(){
-  let movieId = sessionStorage.getItem('movieId');
-
-  axios.get('http://www.omdbapi.com/?apikey=e54db17c&i='+movieId)
-    .then((response) => {
-      console.log(response);
-      let movie = response.data;
-
-      let output =`
-        <div class="row">
-          <div class="movieImage">
-            <img src="${movie.Poster}" class="thumbnail">
-          </div>
-          <h2 id="movieTitle">${movie.Title}</h2>
-          <div class="movieDetails">
-            <ul class="list-group">
-              <li class="list-group-item"><strong>Genre:</strong> ${movie.Genre}</li>
-              <li class="list-group-item"><strong>Released:</strong> ${movie.Released}</li>
-              <li class="list-group-item"><strong>Rated:</strong> ${movie.Rated}</li>
-              <li class="list-group-item"><strong>IMDB Rating:</strong> ${movie.imdbRating}</li>
-              <li class="list-group-item"><strong>Director:</strong> ${movie.Director}</li>
-              <li class="list-group-item"><strong>Writer:</strong> ${movie.Writer}</li>
-              <li class="list-group-item"><strong>Actors:</strong> ${movie.Actors}</li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer">
-          <div class="">
-            <h3>Plot</h3>
-            ${movie.Plot}
-            <hr>
-            <a href="http://imdb.com/title/${movie.imdbID}" target="_blank" class="btn btn-primary">View IMDB</a>
-            <a href="index.html" class="btn btn-default">Go Back To Search</a>
-          </div>
-        </div>
-      `;
-
-      $('#movie').html(output);
-    })
-    .catch((err) => {
-      console.log(err);
-    });
 }

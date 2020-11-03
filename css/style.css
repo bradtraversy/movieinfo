@@ -30,7 +30,7 @@
     margin-left: 50px;
   }
 
-  #searchDiv{
+  #search-div{
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -38,36 +38,28 @@
     width: 100%;
   }
 
-  #searchText{
+  #search-text{
     border: none;
     border-bottom: 2px solid black;
     justify-content: space-evenly;
   }
 
-  #searchText:focus{
+  #search-text:focus{
     outline:none
   }
 
-  .movieTitle{
+  #movie .title{
     font-size: 24px;
     margin: 0;
     padding: 2px;
   }
 
-  .viewDetails{
-    cursor: pointer;
-    font-size: 14px;
-    color: blue;
-    padding: 2px;
-    text-decoration: underline;
-  }
-
-  .movieImage{
+  #movie .image{
     display: flex;
     justify-content: center;
   }
   
-  .movieDetails{
+  #movie .details-wrapper{
     display: flex;
     justify-content: center;
   }
@@ -77,9 +69,7 @@
     justify-content: center;
   }
 
-  #movieTitle{
-    text-align:center;
-  }
+
 
 
 
