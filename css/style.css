@@ -1,13 +1,87 @@
-#movies img, #movie img{
-  width:100%;
-}
 
-@media(min-width:960px){
-  #movies .col-md-3 .well{
-    height: 390px;
+  #title{
+    text-decoration: none;
+    font-weight: 800;
   }
 
-  #movies .col-md-3 img{
-    height:240px;
+  #movies {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 25px;
+    padding: 25px;
+    grid-gap: 40px 90px;
   }
-}
+
+  .object-fit-cover {
+    height: 320px;
+    width: 240px;
+    object-fit: cover; /*magic*/
+  }
+
+  .header{
+    display: flex;
+    align-items: center;
+    padding: 25px;
+  }
+
+  .jumbotron{
+    display: flex;
+    width: 100%;
+    margin-left: 50px;
+  }
+
+  #searchDiv{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+    width: 100%;
+  }
+
+  #searchText{
+    border: none;
+    border-bottom: 2px solid black;
+    justify-content: space-evenly;
+  }
+
+  #searchText:focus{
+    outline:none
+  }
+
+  .movieTitle{
+    font-size: 24px;
+    margin: 0;
+    padding: 2px;
+  }
+
+  .viewDetails{
+    cursor: pointer;
+    font-size: 14px;
+    color: blue;
+    padding: 2px;
+    text-decoration: underline;
+  }
+
+  .movieImage{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .movieDetails{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer{
+    display: flex;
+    justify-content: center;
+  }
+
+  #movieTitle{
+    text-align:center;
+  }
+
+
+
+
+
