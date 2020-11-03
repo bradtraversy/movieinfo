@@ -1,4 +1,4 @@
-window.addEventListener('load', function onReady(){
+document.addEventListener('DOMContentLoaded', function onReady(){
     
   loadMovies();
 
