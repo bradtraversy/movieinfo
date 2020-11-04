@@ -1,0 +1,24 @@
+{
+  "name": "movieinfo",
+  "version": "1.0.0",
+  "description": "JavaScript app that fetches movie data from the OMDb API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RamyaChinnadurai/movieinfo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RamyaChinnadurai/movieinfo/issues"
+  },
+  "homepage": "https://github.com/RamyaChinnadurai/movieinfo#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
