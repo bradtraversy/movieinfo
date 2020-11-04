@@ -1,6 +1,6 @@
 const MongoClient = require('mongodb');
 
-const connectionString = "mongodb+srv://rams123:rams123@cluster0.r5bhq.mongodb.net?retryWrites=true&w=majority";
+const connectionString = "mongodb+srv://<username>:<password>@cluster0.r5bhq.mongodb.net?<db>retryWrites=true&w=majority";
 const connectToDB = async () => MongoClient.connect(connectionString, { useUnifiedTopology: true });
 
 const getMovies = async () => {
