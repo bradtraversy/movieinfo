@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function onReady(){
 });
 
 const fetchMovies = (title) => {
-  const API_BASE = "http://www.omdbapi.com/?apikey=e54db17c";
+  const API_BASE = "http://localhost:3000/movies";
   return fetch(API_BASE+`&s=${title}`)
     .then((res)=>res.json())
     .then(({Search})=> {

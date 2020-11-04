@@ -2,10 +2,8 @@
   "name": "movieinfo",
   "version": "1.0.0",
   "description": "JavaScript app that fetches movie data from the OMDb API",
-  "main": "index.js",
   "scripts": {
-    "start": "node app/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app/server.js"
   },
   "repository": {
     "type": "git",
