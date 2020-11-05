@@ -32,7 +32,7 @@ const getMovieWithId = async (id)=>{
     }
 }
 
-const postMovies = async (obj , res)=>{
+const storeMovies = async (obj , res)=>{
     try{
         console.log(obj);
         const client =await connectToDb();
@@ -46,7 +46,7 @@ const postMovies = async (obj , res)=>{
 
 }
 
-const putMovies = async (req , res)=>{
+const updateMovies = async (req , res)=>{
     try{
         //console.log("Request object:",req);
         //const olddata = await getMovieWithId(req.id.id);
@@ -56,7 +56,7 @@ const putMovies = async (req , res)=>{
         const client =await connectToDb();
         const db=client.db("omdb");
         const response = await db.collection('movies').updateOne(req.olddata, {$set:req.newdata} );
-        console.log("Put success");
+        console.log("Patch success");
         return true;
     }
     catch(err){
@@ -79,4 +79,4 @@ const deleteMovies = async (req , res)=>{
 }
 
 
-module.exports={getMovies,postMovies,putMovies,getMovieWithId,deleteMovies}
+module.exports={getMovies,storeMovies,updateMovies,getMovieWithId,deleteMovies}
