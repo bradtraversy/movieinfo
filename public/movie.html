@@ -19,7 +19,7 @@
     <div class="container">
       <div id="movie" class="well">
         <div class="row">
-          <div class="image">
+          <div id="image">
               <img src="https://image.shutterstock.com/image-vector/default-ui-image-placeholder-wireframes-260nw-1037719192.jpg" class="thumbnail">
           </div>
           <h2 id="title"></h2>
@@ -44,11 +44,25 @@
       (function(){
 
         // Step 1. Get the id from the session storage. Insert the code below
-
-
+        const movie_id=sessionStorage.getItem('movieId');
+        console.log("Mivie_id: ",movie_id)
         // Step 2. Does a api call to fetch the additional details and update the page
+        const API_BASE = "http://localhost:3000/movies";
+        return fetch(API_BASE+ `/${movie_id}`)
+        .then((res)=>res.json())
+        .then((movie)=> {
+          console.log(movie);
+          loadMovie(movie);
+        })
+          .catch(err=>console.log(err));
 
-        
+        function loadMovie(movie){
+          console.log(movie);
+          var image = `<img src=${movie.Poster} class="thumbnail" style="margin-left: 41%;">`;
+          document.getElementById('image').innerHTML = image; 
+          document.getElementById('title').innerHTML = movie.Title;.
+        }
+
       })();
     </script>
   </body>
