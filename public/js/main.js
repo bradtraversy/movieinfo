@@ -1,6 +1,3 @@
-
-
-
 document.addEventListener('DOMContentLoaded', function onReady(){
     
   var a = 5;

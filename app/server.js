@@ -17,7 +17,7 @@ app.get('/movies', async(req,res)=>{
 
 app.post('/movies', async(req,res)=>{
     const movie = await postMovies(req.body);
-    res.end();
+    res.send({"type" : "POST"})
 })
 
 app.put('/movies/:id',async(req,res)=>{
@@ -26,14 +26,14 @@ app.put('/movies/:id',async(req,res)=>{
     console.log(olddata);
     console.log(newdata);
     const movie = await putMovies({olddata,newdata});
-    res.end();
+    res.send({"type" : "PUT"})
 })
 app.delete('/movies/:id',async(req,res)=>{
     //console.log(req.param);
     const toDeletedata = await getMovieWithId(req.param.id);
     //console.log(toDeletedata);
     const Deleteddata = await deleteMovies(toDeletedata);
-    res.end();
+    res.send({"type" : "DELETE"})
 })
 
 app.get('/movies/:id', async(req,res)=>{
