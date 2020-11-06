@@ -95,6 +95,12 @@
     justify-content: center;
   }
 
+  #favorites{
+    width: 42%;
+    text-align: end;
+    padding: 8px 5px 0px 0px;
+  }
+
 
 
 
