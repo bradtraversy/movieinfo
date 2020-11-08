@@ -1,0 +1,111 @@
+  body{
+    background: #060709;
+    color:white;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  #title{
+    text-decoration: none;
+    font-weight: 800;
+    color:white;
+    font-size: 22px;
+  }
+
+  #movies {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 25px;
+    padding: 25px;
+    grid-gap: 60px 120px;
+  }
+
+  .object-fit-cover {
+    height: 320px;
+    width: 240px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px 0 #4a4a4a;
+    transition: 0.3s;
+    border-radius: 10px;
+  }
+
+  .header{
+    display: flex;
+    align-items: center;
+    padding: 25px;
+  }
+
+  .jumbotron{
+    display: flex;
+    width: 100%;
+    margin-left: 50px;
+  }
+
+  #search-div{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+    width: 100%;
+  }
+
+  #search-text{
+    border: none;
+    color:white;
+    border-bottom: 2px solid white;
+    justify-content: space-evenly;
+    background: transparent;
+    font-size: 22px;
+  }
+
+  #search-text:focus{
+    outline:none
+  }
+
+  #movie .title{
+    font-size: 24px;
+    margin: 0;
+    padding: 2px;
+  }
+
+  #movie .image{
+    display: flex;
+    justify-content: center;
+  }
+  
+  #movie .details-wrapper{
+    display: flex;
+    justify-content: center;
+  }
+
+  .movie-title{
+    margin: 10px;
+  }
+
+  .view-details{
+    cursor: pointer;
+    margin: 10px;
+  }
+
+  .view-details:hover{
+    text-decoration: underline;
+  }
+  
+  .footer{
+    display: flex;
+    justify-content: center;
+  }
+
+  #favorites{
+    width: 42%;
+    text-align: end;
+    padding: 8px 5px 0px 0px;
+  }
+
+
+
+
+
+
+
+
+

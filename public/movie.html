@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>MOVIBAZAAR</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav class="header navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" id="title" href="index.html">MOVIBAZAAR</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div id="movie" class="well">
+        <div class="row">
+          <div id="image">
+              <img src="https://image.shutterstock.com/image-vector/default-ui-image-placeholder-wireframes-260nw-1037719192.jpg" class="thumbnail">
+          </div>
+          <h2 id="title"></h2>
+          <div class="details-wrapper">
+              <ul class="list-group">
+                <li id="genre"><strong>Genre:</strong></li>
+                <li id="release"><strong>Released:</strong></li>
+                <li id="director"><strong>Director:</strong></li>
+                <li id="actors"><strong>Actors:</strong></li>   
+              </ul>
+          </div>
+          </div>
+          <div class="footer">
+          <div class="">
+              <hr>
+              <a href="index.html" class="btn btn-default">Go Back To Search</a>
+          </div>
+          </div>
+      </div>
+    </div>
+    <script>
+      (function(){
+
+        // Step 1. Get the id from the session storage. Insert the code below
+        const movie_id=sessionStorage.getItem('movieId');
+        console.log("Mivie_id: ",movie_id)
+        // Step 2. Does a api call to fetch the additional details and update the page
+        const API_BASE = "http://localhost:3000/movies";
+        fetch(API_BASE+ `/${movie_id}`)
+        .then((res)=>res.json())
+        .then((movie)=> {
+          console.log(movie);
+          loadMovie(movie);
+        })
+        .catch(err=>console.log(err));
+
+        function loadMovie(movie){
+          console.log(movie);
+          var image = `<img src=${movie.Poster} class="thumbnail" style="margin-left: 41%;">`;
+          document.getElementById('image').innerHTML = image; 
+        }
+
+      })();
+    </script>
+  </body>
+</html>
